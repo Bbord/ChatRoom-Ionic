@@ -78,16 +78,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+
   .state('tab.mytab', {
-     url: '/mytab',
-     views: {
-       'tab-mytab': {
-         templateUrl: 'templates/tab-mytab.html'
-       }
-     }
-   });
+    url: '/mytab',
+    views: {
+      'tab-mytab': {
+        templateUrl: 'templates/tab-mytab.html'
+      }
+    }
+  })
+  
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
-
 });
